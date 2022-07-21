@@ -1,0 +1,29 @@
+.container {
+  width: 80%;
+  margin: 1rem auto;
+}
+.repos {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  border-radius: 15px;
+  background-color: var(--appBackgroundColor);
+}
+.repo,
+.followers,
+.following {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 11px;
+  color: var(--textColor);
+}
+.value {
+  margin-top: 0.5rem;
+  color: var(--blackTextColor);
+  font-weight: bold;
+}

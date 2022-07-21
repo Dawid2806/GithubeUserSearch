@@ -1,0 +1,22 @@
+.header {
+  width: 80%;
+  margin: 2rem auto 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerDarkMode {
+  display: flex;
+  cursor: pointer;
+}
+.containerDarkModeImg {
+  margin-left: 0.5rem;
+}
+.containerTitle {
+  color: var(--blackTextColor);
+}
+.containerDarkModeTitle {
+  color: var(--textColor);
+}

@@ -1,0 +1,36 @@
+.containerAvatarImg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.container {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.containerText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.title {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color: var(--blackTextColor);
+}
+.email {
+  font-size: 13px;
+  color: var(--buttonText);
+  margin-bottom: 0.2rem;
+}
+.joined,
+.text {
+  font-size: 11px;
+  color: var(--textColor);
+}
+.text {
+  margin-top: 2rem;
+  text-align: justify;
+}

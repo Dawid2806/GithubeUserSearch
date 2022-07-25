@@ -1,21 +1,26 @@
-import React from "react";
 import classes from "./InfoTop.module.css";
-import avatar from "../../../assets/71017787_2450665411686069_5962383933722066944_n.jpg";
+import { useUserData } from "../../../hooks/useFetch";
 export const InfoTop = () => {
+  const { userData } = useUserData();
   return (
     <div className={classes.container}>
       <div className={classes.containerAvatar}>
-        <img className={classes.containerAvatarImg} src={avatar} alt="" />
+        <img
+          className={classes.containerAvatarImg}
+          src={userData.avatar}
+          alt=""
+        />
+        <div className={classes.containerText}>
+          <span className={classes.title}>{userData.name}</span>
+          <span className={classes.email}>
+            {userData.email === null ? "Brak danych" : userData.email}
+          </span>
+          <span className={classes.joined}>dołączył {userData.createdAt}</span>
+        </div>
       </div>
-      <div className={classes.containerText}>
-        <span className={classes.title}>Nazwa</span>
-        <span className={classes.email}>Email</span>
-        <span className={classes.joined}>dołączył 22 22 22</span>
-      </div>
+      <br />
       <p className={classes.text}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        debitis nostrum doloribus eius iste in quasi, dignissimos quos
-        cupiditate magnam?
+        {userData.bio === null ? "Brak danych" : userData.bio}
       </p>
     </div>
   );

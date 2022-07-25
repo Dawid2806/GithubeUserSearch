@@ -27,3 +27,32 @@
   color: var(--blackTextColor);
   font-weight: bold;
 }
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.info > span {
+  margin-left: 1rem;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 13px;
+  }
+  .value {
+    font-size: 22px;
+  }
+  .containerInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}

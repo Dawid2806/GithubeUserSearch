@@ -6,7 +6,6 @@ import classes from "./Result.module.css";
 export const Result = () => {
   const state = useSelector((state) => state.searchUser);
   const { loading, error, user } = state;
-  console.log(state);
 
   if (loading) {
     return (

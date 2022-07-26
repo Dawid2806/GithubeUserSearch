@@ -4,14 +4,13 @@ import sun from "../../assets/icon-sun.svg";
 import classes from "./Header.module.css";
 export const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const body = document.querySelector("body");
 
   const darkModeHandler = () => {
-    if (body.hasAttribute("data-theme")) {
-      body.removeAttribute("data-theme");
+    if (document.documentElement.hasAttribute("data-theme")) {
+      document.documentElement.removeAttribute("data-theme");
       setIsDarkMode(false);
     } else {
-      body.setAttribute("data-theme", "dark");
+      document.documentElement.setAttribute("data-theme", "dark");
       setIsDarkMode(true);
     }
   };

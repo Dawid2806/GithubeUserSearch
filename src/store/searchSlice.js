@@ -8,10 +8,10 @@ export const fetchUserFromGitHube = createAsyncThunk(
       const { data } = await axios.get(payload);
       return data;
     } catch (error) {
-      if (!error?.respone) {
+      if (!error?.response) {
         throw error;
       }
-      return rejectWithValue(error?.respone?.data);
+      return rejectWithValue(error?.response?.data);
     }
   }
 );

@@ -12,15 +12,13 @@ export const InfoTop = () => {
         />
         <div className={classes.containerText}>
           <span className={classes.title}>{userData.name}</span>
-          <span className={classes.email}>
-            {userData.email === null ? "Brak danych" : userData.email}
-          </span>
+          <span className={classes.login}>@{userData.login}</span>
           <span className={classes.joined}>dołączył {userData.createdAt}</span>
         </div>
       </div>
       <br />
       <p className={classes.text}>
-        {userData.bio === null ? "Brak danych" : userData.bio}
+        {userData.bio === null ? "no Bio" : userData.bio}
       </p>
     </div>
   );

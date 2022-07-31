@@ -28,23 +28,23 @@ export const InfoBottom = () => {
         <div className={classes.info}>
           <img src={location} alt="" />
           <span>
-            {userData.location === null ? "Brak danych" : userData.location}
+            {userData.location === null ? "no Location" : userData.location}
           </span>
         </div>
         <div className={classes.info}>
           <img src={website} alt="" />
-          <span>{userData.url === null ? "Brak danych" : userData.url}</span>
+          <span>{userData.url === null ? "no Website" : userData.url}</span>
         </div>
         <div className={classes.info}>
           <img src={twitter} alt="" />
           <span>
-            {userData.twitter === null ? "Brak danych" : userData.twitter}
+            {userData.twitter === null ? "no Twitter" : userData.twitter}
           </span>
         </div>
         <div className={classes.info}>
           <img src={company} alt="" />
           <span>
-            {userData.company === null ? "Brak danych" : userData.company}
+            {userData.company === null ? "no Company" : userData.company}
           </span>
         </div>
       </div>

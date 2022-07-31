@@ -15,7 +15,7 @@ export const Result = () => {
     );
   }
   if (error) {
-    return alert("mamy problem Przyjacielu 😥😥😥");
+    return;
   }
   if (user) {
     return (

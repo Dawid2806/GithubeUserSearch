@@ -26,7 +26,7 @@
   margin-bottom: 0.2rem;
   color: var(--blackTextColor);
 }
-.email {
+.login {
   font-size: 13px;
   color: var(--buttonText);
   margin-bottom: 0.2rem;
@@ -51,7 +51,7 @@
 
   .joined,
   .text,
-  .email {
+  .login {
     font-size: 16px;
   }
 }

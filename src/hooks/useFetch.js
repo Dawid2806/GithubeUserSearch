@@ -12,7 +12,6 @@ export const useUserData = () => {
   const userData = {
     avatar: user.user?.avatar_url,
     bio: user.user?.bio,
-    email: user.user?.email,
     followers: user.user?.followers,
     following: user.user?.following,
     login: user.user?.login,
